@@ -1,6 +1,11 @@
 """
 Sua tarefa é escrever e testar uma função que usa dois argumentos (um ano e um mês) e retorna o número de dias para o determinado par de ano-mês (embora apenas fevereiro seja sensível ao valor do year, sua função deve ser universal).
 
+**Como resolvi**
+    - tive que fazer a funçao days_in_month() que faz o teste e dá o retorno se o ano é bissexto ou não;
+    - No if desta função usa a outra função para o teste.
+
+    OBS: preciso entender melhor como já foi feito a parte pronta
 """
 
 def is_year_leap(year):
@@ -24,7 +29,7 @@ def days_in_month(year, month):
     else:
         return dias_nao_bissexto[month-1]
 
-
+#parte que veio pronta no desafio
 test_years = [1900, 2000, 2016, 1987]
 test_months = [2, 2, 1, 11]
 test_results = [28, 29, 31, 30]
