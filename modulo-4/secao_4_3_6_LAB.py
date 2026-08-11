@@ -5,6 +5,8 @@ Use as funções escritas e testadas anteriormente. Adicione seus próprios caso
 
 
 """
+dias_ano_bissexto = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+dias_nao_bissexto = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 def is_year_leap(year):
 # Seu código do LAB anterior.
@@ -22,8 +24,7 @@ def is_year_leap(year):
 
 def days_in_month(year, month):
  # Seu código do Lab anterior.
-    dias_ano_bissexto = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    dias_nao_bissexto = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    
 
     if is_year_leap(year):
         return dias_ano_bissexto[month-1]
@@ -32,8 +33,14 @@ def days_in_month(year, month):
 
 def day_of_year(year, month, day):
 # Escreva seu código aqui.
+    dia_no_ano = 0
+    for i in range(0, month-1):
+        dia_no_ano += days_in_month(year, i+1)
+    dia_no_ano += day
 
-    
+    return dia_no_ano
 
 
 print(day_of_year(2000, 12, 31))
+print(day_of_year(2000, 3, 5))
+print(day_of_year(2026, 5, 18))
