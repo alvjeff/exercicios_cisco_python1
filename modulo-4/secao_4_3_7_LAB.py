@@ -9,11 +9,23 @@ Sua tarefa é escrever uma função verificando se um número é primo ou não.
 """
 
 def is_prime(num):
- #
- # Escreva seu código aqui.
- #
+ # exercicio escrito aqui
+    prime = True
+    for x in range(2, num):
+        if (num % x) == 0:
+           prime = False 
+    if prime:
+        return num
+
+"""
+solucao dada pela plataforma
+for i in range(2, int(1 + num ** 0.5)):
+    if num % i == 0:
+        return False
+ return True
+"""
 
 for i in range(1, 20):
     if is_prime(i + 1):
-    print(i + 1, end=" ")
+        print(i + 1, end=" ")
 print()
