@@ -33,3 +33,7 @@ print(liters_100km_to_miles_gallon(10.0))
 #print(miles_gallon_to_liters_100km(60.3))
 #print(miles_gallon_to_liters_100km(31.4))
 #print(miles_gallon_to_liters_100km(23.5))
+
+"""
+obs: cometi um erro crasso de por a vírgula no lugar do ponto em variavel do tipo float.
+"""
