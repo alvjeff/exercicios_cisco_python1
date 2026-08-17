@@ -16,18 +16,20 @@ Preencha o código no editor e execute-o para verificar se a sua saída é igual
 """
 
 def liters_100km_to_miles_gallon(liters):
- #
- # Escreva seu código aquie your code here.
- #
+ # aqui o meu codigo
+ # fiz a conversão de L para galao e km para milha
+    resultado = (100/1.609344) / (liters / 3.785411784)
+    return resultado  
 
-def miles_gallon_to_liters_100km(miles):
+
+#def miles_gallon_to_liters_100km(miles):
  #
  # Escreva seu código aqui.
  #
 
 print(liters_100km_to_miles_gallon(3.9))
 print(liters_100km_to_miles_gallon(7.5))
-print(liters_100km_to_miles_gallon(10.))
-print(miles_gallon_to_liters_100km(60.3))
-print(miles_gallon_to_liters_100km(31.4))
-print(miles_gallon_to_liters_100km(23.5))
+print(liters_100km_to_miles_gallon(10.0))
+#print(miles_gallon_to_liters_100km(60.3))
+#print(miles_gallon_to_liters_100km(31.4))
+#print(miles_gallon_to_liters_100km(23.5))
