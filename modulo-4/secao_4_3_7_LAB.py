@@ -10,6 +10,7 @@ Sua tarefa é escrever uma função verificando se um número é primo ou não.
 
 def is_prime(num):
  # exercicio escrito aqui
+ #vou melhorar esta solução, ela não resolve o problema da melhor maneira apesar da saída ser igual pede o exercicio
     prime = True
     for x in range(2, num):
         if (num % x) == 0:
