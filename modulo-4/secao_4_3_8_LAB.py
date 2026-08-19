@@ -36,4 +36,15 @@ print(miles_gallon_to_liters_100km(23.5))
 
 """
 obs: cometi um erro crasso de por a vírgula no lugar do ponto em variavel do tipo float.
+
+obs2: rever segunda função, o resultado não está saindo totalmente fidedigno ao gabarito:
+
+60.31143162393162
+31.36194444444444
+23.52145833333333
+3.9007393587617467
+7.490910297239916
+10.009131205673757 
+
+
 """
