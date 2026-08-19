@@ -22,17 +22,17 @@ def liters_100km_to_miles_gallon(liters):
     return resultado  
 
 
-#def miles_gallon_to_liters_100km(miles):
- #
- # Escreva seu código aqui.
- #
+def miles_gallon_to_liters_100km(miles):
+ ## aqui o meu codigo
+    resultado = (3.78) * 100 /  (1.609 * miles) 
+    return resultado
 
 print(liters_100km_to_miles_gallon(3.9))
 print(liters_100km_to_miles_gallon(7.5))
 print(liters_100km_to_miles_gallon(10.0))
-#print(miles_gallon_to_liters_100km(60.3))
-#print(miles_gallon_to_liters_100km(31.4))
-#print(miles_gallon_to_liters_100km(23.5))
+print(miles_gallon_to_liters_100km(60.3))
+print(miles_gallon_to_liters_100km(31.4))
+print(miles_gallon_to_liters_100km(23.5))
 
 """
 obs: cometi um erro crasso de por a vírgula no lugar do ponto em variavel do tipo float.
