@@ -46,5 +46,4 @@ obs2: rever segunda função, o resultado não está saindo totalmente fidedigno
 7.490910297239916
 10.009131205673757 
 
-
 """
