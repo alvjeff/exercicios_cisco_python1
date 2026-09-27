@@ -11,10 +11,8 @@ def factorial_funcion(n):
         product *= i
     return product
 
+    
+for n in range (1, 6): 
+    print(n, factorial_funcion(n))
 
-    for n in range (1, 6): #testndo
-        print(n, factorial_funcion(n))
-
-############
-#### continuar aqui #####
-############
+#fazer melhorias neste código como por uma entrada pelo usuário
